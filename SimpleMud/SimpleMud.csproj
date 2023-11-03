@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>SimpleMud</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="YamlDotNet" Version="13.2.0" />
+    <PackageReference Include="zlib.net" Version="1.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Help" />
+    <None Remove="help\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="help\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="help\CREDITS" />
+    <Content Include="help\CREDITS">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Remove="help\ANSI" />
+    <Content Include="help\ANSI">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Remove="help\GREETING" />
+    <Content Include="help\GREETING">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Remove="help\MCCP" />
+    <Content Include="help\MCCP">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Remove="help\MOTD" />
+    <Content Include="help\MOTD">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

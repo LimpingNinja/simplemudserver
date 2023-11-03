@@ -1,0 +1,14 @@
+SimpleMud(tm) supports ANSI colors, and you can access them by using the
+'##' character, followed by the colorkey from the table below.
+
+Yellow    #y##y #Y##Y#n
+Blue      #b##b #B##B#n
+Green     #g##g #G##G#n
+Red       #r##r #R##R#n
+Cyan      #c##c #C##C#n
+Purple    #p##p #P##P#n
+Dark      #d##d #D##D#n
+White     #w##w #W##W#n
+
+The 'n' key is the default SocketMud(tm) color, and the mudcolor will
+always revert to this color at the end of a string.
