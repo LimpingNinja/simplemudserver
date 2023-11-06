@@ -1,11 +1,10 @@
 using System.Net.Sockets;
 using System.Text;
 using zlib;
-namespace SimpleMud;
+namespace BittyMud;
 
 public class Socket
 {
-    
     public enum TelnetCommand
     {
         EOR = 239,  // End of Record, sent to denote when the server is ready to receive (similar to GA)

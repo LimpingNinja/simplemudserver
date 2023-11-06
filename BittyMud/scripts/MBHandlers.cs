@@ -1,6 +1,6 @@
-using SimpleMud;
+using BittyMud;
 
-namespace SimpleMud
+namespace BittyMud
 {
 
 // M - String, F string, p int, p row, p col, int abort0ls

@@ -1,0 +1,3 @@
+using BittyMud;
+
+namespace BittyMud;

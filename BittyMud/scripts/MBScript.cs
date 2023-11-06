@@ -3,7 +3,7 @@ using bool_t = System.Byte;
 using int_t = System.Int32;
 using real_t = System.Single;
 
-namespace SimpleMud
+namespace BittyMud
 {
     public static class MBScript
     {

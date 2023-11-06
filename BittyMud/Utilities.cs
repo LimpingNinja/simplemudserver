@@ -1,6 +1,6 @@
 using System.Text;
 using System.Text.Json;
-namespace SimpleMud;
+namespace BittyMud;
 
 public class Utilities
 {

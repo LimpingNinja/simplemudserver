@@ -1,14 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.IO;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Linq;
 
-
-namespace SimpleMud;
-
+namespace BittyMud;
 
 [Serializable]
 public class Room
@@ -37,14 +29,14 @@ public class Room
         Extracted = false;
     }
 
-    public void Serialize(string filename)
+    public byte[]? Serialize(string filename)
     {
         var pickle = Utilities.ObjectToByteArray(this);
         if(pickle == null) {
             Console.WriteLine($"Error in Serializing room {this.Uid}.");
-            return;
+            return null;
         }
-        File.WriteAllBytes(filename, pickle);
+        return pickle;
     }
 
     public Room Deserialize(string filename)
